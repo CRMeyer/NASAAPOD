@@ -1,0 +1,20 @@
+{
+  "name": "nasaapod",
+  "version": "1.0.0",
+  "description": "NASA Astronomy Picture of the Day",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Colin Meyer",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.5.0",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "git": "^0.1.5",
+    "node": "^20.5.1",
+    "nodemon": "^3.0.1"
+  }
+}

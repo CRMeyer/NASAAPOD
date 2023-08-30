@@ -1,0 +1,17 @@
+<%- include("partials/header.ejs") %>
+
+<h1 style="text-align: center;">NASA image of the Day!</h1>
+<form action="/day" method="POST" name="timeFrame" style="margin: 5px;">
+    <p class="h5" style="text-align: center;">Choose your own date</p>
+    <input style= " margin-left: 41%;" type="date" name="day" id="day">
+    <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+</form>
+
+<div class="card" name="response-area" style="width:95%; align-items: center; margin-left:2.5%; margin-right: 2.5%">
+    <h3 class="card-header">Title: <%= content.title %></h3>
+    <p class="card-text h5">Date: <%= content.date %></p>
+    <img src=<%= content.hdurl %> class="img-fluid">
+    <p class="card-text" style="text-align: center;"><h3>Explanation:</h4></br><%= content.explanation %></p>
+</div>
+
+<%- include("partials/footer.ejs") %>
